@@ -7,8 +7,10 @@
   "author": "Ahn HyungRo <elle0510@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "dependencies": {
+    "typescript": "^4.0.5"
   },
   "devDependencies": {
     "tsc-watch": "^4.2.9"
